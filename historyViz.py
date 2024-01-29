@@ -1,15 +1,12 @@
 import requests
 import pandas as pd
 import streamlit as st
-from web3 import Web3
 
 import datetime
 
 def convert_timestamp_to_datetime(timestamp):
 
     return datetime.datetime.utcfromtimestamp(timestamp / 1000)
-
-w3 = Web3()
 
 def wei_to_ether(wei_amount):
     return int(wei_amount) / 10 ** 18
